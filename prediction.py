@@ -9,7 +9,7 @@ with open('tokenizer.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
 
 
-def predict_next_word_helper(text, model=model, tokenizer=tokenizer):
+def predict_next_word(text, model=model, tokenizer=tokenizer):
     max_sequence_len = model.input_shape[1]+1
     token_list = tokenizer.texts_to_sequences([text])[0]
 
