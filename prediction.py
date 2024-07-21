@@ -3,7 +3,7 @@ from tensorflow.keras.models import load_model
 import numpy as np
 import pickle
 
-model = load_model('model.keras')
+model = load_model('model_gru.keras')
 
 with open('tokenizer.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
